@@ -38,6 +38,7 @@ trigger AccName on Lead (before insert, before update) {
     for(Lead myLead : trigger.new ){
 
         myLead.AccountLeads__c = matchingAcctNames.get(myLead.Company);
+        // this is for testing 
 
     }
 
