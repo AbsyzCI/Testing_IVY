@@ -12,6 +12,7 @@ trigger AccName on Lead (before insert, before update) {
     //It this case:
         //the 1st column will be the Account Name
         //the 2nd column will be the Account Id
+        //added by praveen
     Map<String, Id> matchingAcctNames = new Map<String,Id>();
 
 
